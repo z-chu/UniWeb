@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_setup">Setup</string>
+    <string name="permission_denied_take_photo_with_camera">You need to access the "Camera" to take pictures, please go to "App Information -> Permissions" to grant it!</string>
+    <string name="permission_denied_choose_photo_from_gallery">Access to the album requires access to “External Storage“, please go to “Application Information -> Permissions“to grant it!</string>
+    <string name="permission_denied_file_chooser">Selecting files requires "External Storage" permissions, please go to "Application Information -> Permissions" to grant it!</string>
+    <string name="permission_denied_position">Positioning requires "location" permission, please go to "application information -> permissions" to grant it!</string>
+    <string name="message_get_selected_album_picture_failed">Failed to get the selected album picture</string>
+    <string name="message_copied">Copied</string>
+    <string name="phone_call_fail">Unable to dial, please confirm your SIM card status</string>
+    <string name="message_format_image_save_to">Image saved to:%s</string>
+    <string name="message_error_image_save_failed">Image saving failed</string>
+</resources>

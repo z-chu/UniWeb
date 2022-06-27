@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/uniweb_toolbar_iv_close"
+    style="?toolbarNavigationButtonStyle"
+    android:layout_width="@dimen/uniweb_toolbar_close_button_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:minWidth="@dimen/uniweb_toolbar_close_button_width"
+    app:srcCompat="@drawable/uniweb_action_bar_close_icon"
+    app:tint="?colorOnPrimary"
+    tools:visibility="visible" />

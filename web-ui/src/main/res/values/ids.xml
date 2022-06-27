@@ -1,0 +1,8 @@
+<resources>
+    <item name="root_fragment_container" type="id" />
+    <item name="action_refresh" type="id" />
+    <item name="action_copy_url" type="id" />
+    <item name="action_open_url" type="id" />
+    <item name="action_clean_cache" type="id" />
+    <item name="action_close" type="id" />
+</resources>

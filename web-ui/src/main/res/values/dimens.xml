@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--关闭按钮的宽-->
+    <dimen name="uniweb_toolbar_close_button_width">24dp</dimen>
+    <!--标题和关闭按钮的间距-->
+    <dimen name="uniweb_toolbar_title_close_button_interval">40dp</dimen>
+</resources>

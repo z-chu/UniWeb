@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="uniweb_colorPrimary">#F14655</color>
+    <color name="uniweb_colorPrimaryVariant">#F14655</color>
+    <color name="uniweb_colorOnPrimary">@color/uniweb_textColorPrimary</color>
+    <color name="uniweb_colorSecondary">#F14655</color>
+    <color name="uniweb_colorSecondaryVariant">#F14655</color>
+    <color name="uniweb_colorOnSecondary">@android:color/white</color>
+
+    <color name="uniweb_colorSurface">@android:color/white</color>
+    <color name="uniweb_colorOnSurface">@color/uniweb_textColorPrimary</color>
+    <color name="uniweb_colorBackground">#F2F1F6</color>
+    <color name="uniweb_colorOnBackground">@color/uniweb_textColorPrimary</color>
+
+    <color name="uniweb_colorError">#ffff1744</color>
+    <color name="uniweb_colorOnError">@android:color/white</color>
+    <color name="uniweb_colorWarn">#1AF25C41</color>
+    <color name="uniweb_colorOnWarn">#F25C41</color>
+
+    <color name="uniweb_textColorWarn">@color/uniweb_colorWarn</color>
+    <color name="uniweb_textColorError">@color/uniweb_colorError</color>
+
+    <color name="uniweb_textColorPrimary">@android:color/black</color>
+    <color name="uniweb_textColorSecondary">#ff616161</color>
+    <color name="uniweb_textColorTertiary">#ff9e9e9e</color>
+    <color name="uniweb_colorDivider">#fff5f5f5</color>
+
+
+</resources>

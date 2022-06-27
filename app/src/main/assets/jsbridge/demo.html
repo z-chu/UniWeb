@@ -1,0 +1,154 @@
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title>
+        js调用java
+    </title>
+</head>
+
+<body>
+
+<p>
+<div id="show">
+</div>
+</p>
+
+<p>
+    <xmp id="init"></xmp>
+</p>
+
+<p>
+    <input id="text1" type="text" value="用户名(username)"/>
+</p>
+
+<p>
+    <input id="text2" type="text" value="password"/>
+</p>
+
+<p>
+    <input id="info" onclick="getAppInfo();" type="button" value="获取用户信息"/>
+</p>
+
+<p>
+    <input id="position" onclick="getPosition();" type="button" value="位置"/>
+</p>
+
+<p>
+    <input id="enter" onclick="callPhone();" type="button" value="打电话"/>
+</p>
+
+<p>
+    <input id="title" onclick="setTitle();" type="button" value="设置标题"/>
+</p>
+
+
+<p>
+    <input id="enter1" onclick="copy();" type="button" value="复制文本:‘123123123’"/>
+</p>
+<p>
+    <input onclick="picture();" type="button" value="相册选图"/>
+</p>
+
+<p>
+    <input onclick="camera();" type="button" value="拍照"/>
+</p>
+<p>
+    <input onclick="shoot();" type="button" value="拍摄视频"/>
+</p>
+<p>
+    <input type="file" value="打开文件"/>
+</p>
+
+</body>
+<script>
+
+        function testDiv() {
+            document.getElementById("show").innerHTML = document.getElementsByTagName("html")[0].innerHTML;
+        }
+
+        function getAppInfo() {
+            var ss="{\"action\": \"getAppInfo\"}"
+            app.webcall(ss)
+        }
+
+        function getPosition() {
+        var ss="{\"action\": \"position\"}"
+            app.webcall(ss)
+        }
+
+        function callPhone() {
+            var ss="{\"action\": \"callPhone\",\"phone_no\": \"13838382348\"}"
+            app.webcall(ss)
+        }
+
+        function setTitle() {
+            var ss="{\"action\": \"setTitle\",\"title\": \"标题来自H5\"}"
+            app.webcall(ss)
+        }
+
+        function copy() {
+         var ss="{\"action\": \"paste\",\"content\": \"123123123\"}"
+            app.webcall(ss)
+        }
+
+                function picture() {
+         var ss="{\"action\": \"picture\",\"callback\": \"showImage\"}"
+            app.webcall(ss)
+        }
+
+             function camera() {
+         var ss="{\"action\": \"camera\",\"callback\": \"showImage\"}"
+            app.webcall(ss)
+        }
+
+       function shoot() {
+         var ss="{\"action\": \"shoot\",\"callback\": \"bridgeLog\"}"
+            app.webcall(ss)
+        }
+
+           function showImage(base64) {
+          var img=new Image()
+          img.src=base64
+          document.body.appendChild(img)
+        }
+
+        function bridgeLog(logContent) {
+            document.getElementById("show").innerHTML = logContent;
+        }
+
+        function connectWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) {
+                callback(WebViewJavascriptBridge)
+            } else {
+                document.addEventListener(
+                    'WebViewJavascriptBridgeReady'
+                    , function() {
+                        callback(WebViewJavascriptBridge)
+                    },
+                    false
+                );
+            }
+        }
+
+        connectWebViewJavascriptBridge(function(bridge) {
+            bridge.init(function(message, responseCallback) {
+                console.log('Js got a message', message);
+                var data = {
+                    'Javascript Responds': '测试中文!'
+                };
+                console.log('Js responding with', data);
+                responseCallback(data);
+            });
+
+            bridge.registerHandler("functionInJs", function(data, responseCallback) {
+                document.getElementById("show").innerHTML = ("data from Java: = " + data);
+                var responseData = "Javascript Says Right back aka!";
+                responseCallback(responseData);
+            });
+        })
+
+
+
+</script>
+
+</html>

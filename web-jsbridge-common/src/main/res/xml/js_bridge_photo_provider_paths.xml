@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--
+
+    仅仅设置以下目录在许多华为手机上发生 IllegalArgumentException: Failed to find configured root that contains
+
+    <external-cache-path
+         name="external_cache_files"
+         path="/JsBridgeMedia" />
+     <cache-path
+         name="cache"
+         path="/JsBridgeMedia" />
+
+     -->
+
+    <!--所以为了解决问题，我选择设置全部-->
+    <external-path
+        name="external"
+        path="." />
+    <external-files-path
+        name="external_files"
+        path="." />
+    <cache-path
+        name="cache"
+        path="." />
+    <external-cache-path
+        name="external_cache"
+        path="." />
+    <files-path
+        name="files"
+        path="." />
+
+</paths>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/action_refresh"
+        android:title="@string/uniweb_menu_title_refresh"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@id/action_copy_url"
+        android:title="@string/uniweb_menu_title_copy_url"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@id/action_open_url"
+        android:title="@string/uniweb_menu_title_open_in_browser"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@id/action_clean_cache"
+        android:title="@string/uniweb_menu_title_clean_cache"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@id/action_close"
+        android:title="@string/uniweb_menu_title_close"
+        app:showAsAction="never" />
+
+
+</menu>

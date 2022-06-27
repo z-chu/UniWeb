@@ -1,0 +1,92 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.radiuswallet.webexample"
+        minSdkVersion 19
+        targetSdkVersion 30
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+
+        manifestPlaceholders = [
+                APP_NAME        : "uniWeb",
+                APP_VERSION_NAME: "1.0"
+
+        ]
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        buildTypes {
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+                resValue "string", "baidu_appkey", ""
+                resValue 'string', 'getui_appid', ""
+                resValue 'string', 'getui_appkey', ""
+                resValue 'string', 'getui_appsecret', ""
+                resValue 'string', 'wechat_appid', "wxae75e4ceb13c9df5"
+                resValue 'string', 'qq_appid', "1104078739"
+                resValue 'string', 'wechat_mchid', "wxae75e4ceb13c9df5"
+
+
+            }
+            debug {
+                resValue "string", "baidu_appkey", ""
+                resValue 'string', 'getui_appid', ""
+                resValue 'string', 'getui_appkey', ""
+                resValue 'string', 'getui_appsecret', ""
+                resValue 'string', 'getui_appsecret', ""
+                resValue 'string', 'wechat_appid', "wx010cb1a7cedeeaf2"
+                resValue 'string', 'qq_appid', "1104078739"
+                resValue 'string', 'wechat_mchid', "wxae75e4ceb13c9df5"
+
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation project(':web-jsbridge-interface')
+    implementation project(':web-jsbridge-common')
+    implementation project(':web-ui')
+
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    api 'com.github.bumptech.glide:okhttp3-integration:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation "com.google.auto.service:auto-service-annotations:1.0-rc6"
+    annotationProcessor "com.google.auto.service:auto-service:1.0-rc6"
+    kapt "com.google.auto.service:auto-service:1.0-rc6"
+}

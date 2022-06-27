@@ -1,0 +1,5 @@
+rootProject.name = "UniWeb"
+include ':app'
+include ':web-jsbridge-interface'
+include ':web-jsbridge-common'
+include ':web-ui'

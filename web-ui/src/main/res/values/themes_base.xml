@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.UniWeb" parent="Theme.MaterialComponents.DayNight.NoActionBar" tools:ignore="ResourceName">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/uniweb_colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/uniweb_colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/uniweb_colorOnPrimary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/uniweb_colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/uniweb_colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/uniweb_colorOnSecondary</item>
+        <!-- Surface brand color. -->
+        <item name="colorSurface">@color/uniweb_colorSurface</item>
+        <item name="colorOnSurface">@color/uniweb_colorOnSurface</item>
+        <!-- Background brand color. -->
+        <item name="android:colorBackground">@color/uniweb_colorBackground</item>
+        <item name="colorOnBackground">@color/uniweb_colorOnBackground</item>
+
+        <!-- Other color.-->
+        <item name="colorControlNormal">@color/uniweb_textColorTertiary</item>
+
+        <!-- Customize your theme here. -->
+        <item name="toolbarStyle">@style/Widget.UniWeb.Toolbar.Surface</item>
+        <item name="appBarLayoutStyle">@style/Widget.UniWeb.AppBarLayout</item>
+        <item name="materialButtonStyle">?android:attr/buttonStyle</item>
+        <item name="buttonStyle">?android:attr/buttonStyle</item>
+        <item name="buttonStyleSmall">?android:attr/buttonStyleSmall</item>
+
+        <!--不设elevationOverlayEnabled为false,在有一些较暗的颜色时，会在设置elevation的view的背景上 铺上一层 elevationOverlayColor -->
+        <item name="elevationOverlayEnabled">false</item>
+
+        <!--Text color. -->
+        <item name="android:textColorPrimary">@color/uniweb_textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/uniweb_textColorSecondary</item>
+        <item name="android:textColorTertiary">@color/uniweb_textColorTertiary</item>
+        <item name="android:textColorPrimaryInverse">@color/uniweb_textColorTertiary</item>
+        <item name="android:textColorSecondaryInverse">@color/uniweb_textColorSecondary</item>
+        <item name="android:textColorTertiaryInverse">@color/uniweb_textColorPrimary</item>
+
+    </style>
+
+    <style name="Base.Theme.UniWeb.Light" tools:ignore="ResourceName" />
+
+</resources>

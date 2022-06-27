@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uniweb_menu_title_refresh">刷新</string>
+    <string name="uniweb_menu_title_copy_url" translatable="false">复制链接</string>
+    <string name="uniweb_menu_title_open_in_browser" translatable="false">在浏览器中打开</string>
+    <string name="uniweb_menu_title_clean_cache" translatable="false">清理缓存</string>
+    <string name="uniweb_menu_title_close" translatable="false">关闭</string>
+    <string name="uniweb_action_choose_photo_from_gallery">相册</string>
+    <string name="uniweb_action_choose_photo_from_camera">拍照</string>
+    <string name="uniweb_action_choose_photo_from_video">录像</string>
+    <string name="uniweb_action_choose_photo_from_files">文件</string>
+    <string name="uniweb_message_ssl_authentication_failed">SSL 身份验证失败。 您想继续访问吗？</string>
+
+</resources>
