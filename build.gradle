@@ -13,8 +13,6 @@ buildscript {
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
         maven { url 'https://jitpack.io' }
-        maven { url 'http://maven.xlcx.work/repository/maven-public/' }
-        maven { url 'https://dl.bintray.com/zouyuhan/maven' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.2.1"

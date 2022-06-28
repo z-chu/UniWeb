@@ -22,7 +22,9 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:name"
         tools:targetApi="n">
-        <activity android:name="com.radiuswallet.webexample.MainActivity">
+        <activity
+            android:name="com.radiuswallet.webexample.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
