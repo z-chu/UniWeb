@@ -27,10 +27,8 @@ allprojects {
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         google()
         mavenCentral()
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
         maven { url 'https://jitpack.io' }
     }
 }

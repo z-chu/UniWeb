@@ -1,6 +1,7 @@
 package com.radiuswallet.webexample
 
 import android.os.Bundle
+import android.view.Menu
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.radiuswallet.uniweb.UniWebActivity
@@ -68,6 +69,10 @@ class MainActivity : AppCompatActivity() {
                 isShowToolbar = false
             )
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        return super.onCreateOptionsMenu(menu)
     }
 
 
